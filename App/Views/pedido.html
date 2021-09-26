@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <title>Pedidos</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h2 id="cabecalho">Pizzaria</h2>
+        <p>Pedidos</p>
+    </header>
+
+    <form id="formPedido" >
+        <div class="form-group has-error">
+            <label class="control-label" for="nome">Nome:</label>
+            <input class="form-control" type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="tamanho">Tamanho:</label>
+            <select class="form-control" name="tamanho" id="tamanho">
+                <option value="0" selected>Selecione o tamanho ...</option>
+                <option value="GRANDE">GRANDE - R$50,00</option>
+                <option value="MEDIA">MEDIA - R$40,00</option>
+                <option value="PEQUENA">PEQUENA - R$30,00</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Para pizza grande escolha até 3 sabores.</p>
+            <p>Para pizza média escolha até 2 sabores.</p>
+        </div>
+        <div class="form-group">
+            <label for="sabor1">Sabor:</label>
+            <select class="form-control" name="sabor1" id="sabor1">
+                <option value="0" selected>Selecione seu Sabor ...</option>
+                <option value="CALABRESA">CALABRESA</option>
+                <option value="FRANGO">FRANGO</option>
+                <option value="MUSSARELA">MUSSARELA</option>
+                <option value="PORTUQUESA">PORTUQUESA</option>
+                <option value="MILHO">MILHO</option>
+                <option value="MARGUERITA">MARGUERITA</option>
+                <option value="QUATRO QUEIJO">QUATRO QUEIJOS</option>
+                <option value="CHOCOLATE">CHOCOLATE</option>
+                <option value="DOCE DE LEITE">DOCE DE LEITE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sabor2">Sabor:</label>
+            <select class="form-control" name="sabor2" id="sabor2">
+                <option value="0" selected>Selecione seu Sabor ...</option>
+                <option value="CALABRESA">CALABRESA</option>
+                <option value="FRANGO">FRANGO</option>
+                <option value="MUSSARELA">MUSSARELA</option>
+                <option value="PORTUQUESA">PORTUQUESA</option>
+                <option value="MILHO">MILHO</option>
+                <option value="MARGUERITA">MARGUERITA</option>
+                <option value="QUATRO QUEIJO">QUATRO QUEIJOS</option>
+                <option value="CHOCOLATE">CHOCOLATE</option>
+                <option value="DOCE DE LEITE">DOCE DE LEITE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sabor3">Sabor:</label>
+            <select class="form-control" name="sabor3" id="sabor3">
+                <option value="0" selected>Selecione seu Sabor ...</option>
+                <option value="CALABRESA">CALABRESA</option>
+                <option value="FRANGO">FRANGO</option>
+                <option value="MUSSARELA">MUSSARELA</option>
+                <option value="PORTUQUESA">PORTUQUESA</option>
+                <option value="MILHO">MILHO</option>
+                <option value="MARGUERITA">MARGUERITA</option>
+                <option value="QUATRO QUEIJO">QUATRO QUEIJOS</option>
+                <option value="CHOCOLATE">CHOCOLATE</option>
+                <option value="DOCE DE LEITE">DOCE DE LEITE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Borda:</label>
+            <select class="form-control" name="borda" id="borda">
+                <option value="0" selected>Selecione a borda ...</option>
+                <option value="CATUPIRY">CATUPIRY</option>
+                <option value="CHEDDAR">CHEDDAR</option>
+                <option value="CHOCOLATE">CHOCOLATE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Bebida:</label>
+            <select class="form-control" name="bebida" id="bebida">
+                <option value="0" selected>Selecione sua Bebida ...</option>
+                <option value="AGUA">ÁGUA</option>
+                <option value="REFRIGERANTE">REFRIGERANTE</option>
+                <option value="CERVEJA">CERVEJA</option>
+            </select>
+            <br><br>
+            <button class="btn btn-default" type="reset">Limpar</button>
+            <button class="btn btn-default" id="enviar" type="submit">Enviar</button>
+
+            <input type="hidden" id="metodo" value="formulario.ajax">
+        </div>
+    </form>
+
+    <br><br><br><br><br><br>
+
+</div>
+</body>
+</html>
